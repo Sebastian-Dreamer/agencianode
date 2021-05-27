@@ -1,0 +1,29 @@
+extends ./layouts/index
+
+block slider 
+    .slider 
+        h1 Rio De Jainero 
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros 
+        .row.mb-5
+            .col-md-6 
+                p Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Pellentesque in ipsum id orci porta dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+                p Pellentesque in ipsum id orci porta dapibus. Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="Imagen nosotros" class="img-fluid")
+        include ./layouts/bloques_viaje
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% De Descuento
+                        p.titulo Viaje a canada
+                        p.fecha 20 marzo de 2022 - 28 de marzo de 2022
+                        p.precio $2,500 USD
+    .container
+        h2.mt-5.text-center Testimoniales
+            include ./layouts/bloque_testimoniales
